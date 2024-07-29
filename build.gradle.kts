@@ -36,6 +36,15 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
-tasks.withType<Test> {
-    useJUnitPlatform()
+tasks {
+    withType<Test> {
+        useJUnitPlatform()
+    }
+    jar{
+        manifest {
+            attributes["Main-Class"] = "java/dio/carrinhoprodutosantanderbootcamp2024/CarrinhoProdutoSantanderBootcamp2024Application.java"
+        }
+    }
+
 }
+
