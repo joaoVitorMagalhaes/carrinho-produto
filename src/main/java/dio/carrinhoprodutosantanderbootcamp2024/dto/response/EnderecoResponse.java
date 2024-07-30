@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class EnderecoResponse {
-    private Long id;
     private String cep;
     private String logradouro;
     private String bairro;
@@ -18,7 +17,6 @@ public class EnderecoResponse {
 
     public static EnderecoResponse toResponse(Endereco endereco) {
         EnderecoResponse response = new EnderecoResponse();
-        response.setId(endereco.getId());
         response.setCep(endereco.getCep());
         response.setLogradouro(endereco.getLogradouro());
         response.setBairro(endereco.getBairro());

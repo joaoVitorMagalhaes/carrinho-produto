@@ -24,6 +24,9 @@ public class Cart {
     @Column(columnDefinition = "TIMESTAMP")
     private LocalDateTime createdAt;
 
+    @Column(columnDefinition = "TIMESTAMP")
+    private LocalDateTime updatedAt;
+
     @Column(precision = 4, scale = 2)
     private BigDecimal total;
 
