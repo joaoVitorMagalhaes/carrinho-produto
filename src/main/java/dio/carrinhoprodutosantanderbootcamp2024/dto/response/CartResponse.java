@@ -17,12 +17,13 @@ import java.util.stream.Collectors;
 @Data
 public class CartResponse {
     private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
     private BigDecimal total;
     private CartStatus status;
 
     public static List<CartResponse> toResponse(List<Cart> cartList) {
         return cartList.stream()
-                .map(cart -> new CartResponse(cart.getCreatedAt(), cart.getTotal(), cart.getStatus()))
+                .map(cart -> new CartResponse(cart.getCreatedAt(), cart.getUpdatedAt(), cart.getTotal(), cart.getStatus()))
                 .collect(Collectors.toList());
     }
 }
