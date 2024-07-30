@@ -1,8 +1,6 @@
 package dio.carrinhoprodutosantanderbootcamp2024.service.impl;
 
 import dio.carrinhoprodutosantanderbootcamp2024.dto.request.BuyerRequest;
-import dio.carrinhoprodutosantanderbootcamp2024.dto.response.BuyerResponse;
-import dio.carrinhoprodutosantanderbootcamp2024.dto.response.EnderecoResponse;
 import dio.carrinhoprodutosantanderbootcamp2024.entity.Cart;
 import dio.carrinhoprodutosantanderbootcamp2024.entity.Endereco;
 import dio.carrinhoprodutosantanderbootcamp2024.entity.Buyer;
